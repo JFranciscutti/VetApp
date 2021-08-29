@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="view.IngresoActivity">
+
+    <TextView
+        android:id="@+id/i_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingresar Animal"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/i_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName" />
+
+    <Spinner
+        android:id="@+id/i_tipo"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/i_raza"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Raza"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/i_edad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Edad"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/i_causa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Causa"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/i_ingresar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingresar animal" />
+
+    <Button
+        android:id="@+id/i_btn_doctores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver doctores atendiendo" />
+
+    <Button
+        android:id="@+id/i_btn_animales"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver animales en espera" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_doctores"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
